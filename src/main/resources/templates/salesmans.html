@@ -32,14 +32,32 @@
     h1 {
       text-align: center;
     }
+    .card-body {
+      align-content: center;
+    }
   </style>
 </head>
 <body>
 <div layout:fragment="content">
   <h1>Final Exam Set B</h1>
   <h1>Sales Summary Table</h1>
+
   <div class="container mt-2 pre-scrollable">
-    <div class="card-header"></div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Salesman</th><th>Washing Machine</th><th>Refrigerator</th><th>Music System</th>
+      </tr>
+      </thead>
+      <tbody>
+      <td>Jessica Lam</td>
+      <td>5000.0</td>
+      <td>5000.0</td>
+      <td>0.0</td>
+      </tr>
+      </tbody>
+    </table>
+<!--    <div class="card-header"></div>-->
     <div class="card-body">
       <form method="get" th:action="@{index}">
         <label>Salesman</label>
@@ -53,6 +71,7 @@
         <label>Transaction Date</label>
         <input type="date" name="transDate">
       </form>
+      <a class="btn btn-success">Save</a>
       <table class="table">
         <thead>
         <tr>

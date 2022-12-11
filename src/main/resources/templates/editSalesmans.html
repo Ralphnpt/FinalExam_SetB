@@ -11,7 +11,8 @@
 </head>
 <body>
 <section layout:fragment="content">
-    <div class="col-md-6 offset-3"> <form method="post" th:action="@{save}">
+    <div class="col-md-6 offset-3">
+        <form method="post" th:action="@{save}">
         <div>
             <label>Transaction Number</label> <input class="form-control" type="text" name="id" th:value="${salesman.id}"> <span th:errors="${salesman.id}"></span>
         </div>
